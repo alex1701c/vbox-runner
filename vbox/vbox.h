@@ -21,6 +21,7 @@
 #define VBOXRUNNER_H
 
 #include <KRunner/AbstractRunner>
+#include <QRegularExpression>
 #include "VBoxConfigReader.h"
 
 class VBoxConfigReader;
@@ -45,7 +46,7 @@ private:
 
     VBoxConfigReader *rd;
     KConfigGroup launchCountConfig;
-    const QRegExp overviewRegex = QRegExp("^vm ?", Qt::CaseInsensitive);
+    const QRegularExpression overviewRegex = QRegularExpression("^vm ?", QRegularExpression::CaseInsensitiveOption);
 
 protected Q_SLOTS:
 

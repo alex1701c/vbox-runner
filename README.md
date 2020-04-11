@@ -1,14 +1,10 @@
-# vbox-runner
+# Vbox-Runner
 Allows you to start your VirtualBox virtual machines from Krunner (Alt-Space) in Plasma 5.
 
 This is a fork from http://kde-apps.org/content/show.php/VBox+Runner?content=107926, because it is
 discontinued.
 
 # Build instructions
-
-## Prerequisites 
-    * Qt5
-    * KF5
 
 ### Archlinux
     sudo pacman -S cmake extra-cmake-modules
